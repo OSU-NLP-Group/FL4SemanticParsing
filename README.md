@@ -23,7 +23,7 @@ The figure below is the overall structure of Lorar.
 ![avatar](Lorar.png)
 
 ## Dataset
-We release our dataset (both for training and evaluation) for three training paradigms (finetune, centralized training, FL): https://buckeyemailosu-my.sharepoint.com/:u:/g/personal/zhang_11535_buckeyemail_osu_edu/EXqPGV93wEJDntvbWsTEtj0BvN6sKLiye-vtjwVEpeE4fg?e=ivhVXx
+We release our dataset (both for training and evaluation) for three training paradigms (finetune, centralized training, FL):"[data_release.zip](https://buckeyemailosu-my.sharepoint.com/:u:/r/personal/zhang_11535_buckeyemail_osu_edu/Documents/ACL23_FL4SemanticParsing/data_release.zip?csf=1&web=1&e=RYGvFF)".
 Download the data and upzip the folder. Put the data folder to the path as `/Lorar/text2sql/data_release/`.
 
 
