@@ -112,5 +112,5 @@ Inference
 
 ## Misc
 
-Our codebase are adapted from UnifiedSKG, FedML, FedNLP and Picard. We will keep maintaining and cleaning our code. 
+Our codebase is adapted from UnifiedSKG, FedML, FedNLP and Picard. We will keep maintaining and cleaning our code. 
 If you have any questions, please feel free to contact zhang.11535[AT]buckeyemail[DOT]osu[DOT]edu or open an issue so we can help you better and quicker :)
