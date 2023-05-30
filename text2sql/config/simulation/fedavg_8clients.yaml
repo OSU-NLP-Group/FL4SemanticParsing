@@ -1,0 +1,69 @@
+common_args:
+  training_type: "simulation"
+  random_seed: 0
+
+data_args:
+  dataset: "michigan"
+  data_file_path: /home/zhang.11535/UnifiedSKG/data/h5_michigan/question_split_full_michigan_data_w_dev_revise_table_schema.h5
+  partition_file_path: /home/zhang.11535/UnifiedSKG/data/h5_michigan/michigan_question_split_full_partition_index_w_dev_revise_table_schema.h5
+  partition_method: "michigan_full_question_split_partition"
+  reprocess_input_data: false
+
+model_args:
+  model_type: "t5-base"
+  model_class: "transformer"
+  model: "t5-base"
+  do_lower_case: true
+  formulation: "michigan"
+
+train_args:
+  federated_optimizer: "FedAvg"
+  weighting_mechanism: "original"
+  client_id_list: "[]"
+  client_num_in_total: 8
+  client_num_per_round: 8
+  comm_round: 81
+  epochs: 1
+  batch_size: 8
+  eval_batch_size: 64
+  max_seq_length: 128
+  fp16: false
+  output_dir: "./output"
+  server_optimizer: sgd
+  server_lr: 1
+  server_momentum: 0.9
+  ci: 0
+  learning_rate: 0.00005
+  weight_decay: 0.001
+  gradient_accumulation_steps: 1
+  clip_grad_norm: true
+  max_grad_norm: 1
+  fedprox_mu: 0.01
+  evaluate_during_training: false
+  evaluate_during_training_steps: 10
+  freeze_layers: ''
+  is_debug_mode: false
+
+validation_args:
+  frequency_of_the_test: 5
+
+device_args:
+  worker_num: 3
+  using_gpu: true
+  gpu_mapping_file: config/simulation/gpu_mapping.yaml
+  gpu_mapping_key: mapping_fednlp_spider_8clients_A6000
+
+comm_args:
+  backend: "MPI"
+  is_mobile: 0
+
+
+tracking_args:
+  log_file_dir: ../log
+  enable_wandb: true
+  wandb_key: 
+  wandb_project: 
+  wandb_name: fedavg_text2sql
+
+
+  

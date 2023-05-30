@@ -1,0 +1,10 @@
+.DS_Store
+*/mlops/*
+
+
+text2sql/third_party_UnifiedSKG/output/
+text2sql/third_party_UnifiedSKG/eight_data/
+text2sql/third_party_UnifiedSKG/wandb/
+output/
+wandb/
+.gitignore
