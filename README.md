@@ -49,11 +49,6 @@ export WANDB_ENTITY=YOUR_TEAM_NAME
 ``````
 
 
-## Code Structure of Lorar
-
-TODO
-
-
 ## How to run the examples
 
 We provide 4 different weighting mechanisms for three FL algorithms: FedOPT, FedAvg and FedProx. We provide examples for fedOPT and its four weighting mechanisms and also provide steps on how to run them below. We have provided scripts for FedAvg and FedProx as well.
